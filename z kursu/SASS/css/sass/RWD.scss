@@ -1,0 +1,75 @@
+@media only screen and (max-width: 1200px) {
+    *{
+        box-sizing: border-box;
+        margin:0;
+        max-width: 100%;
+    }
+    .Buttons{
+        margin:0;
+        padding:0;
+        border:none;
+        width:100%;
+        height:auto;
+    }
+    .content{
+        width:100%;
+    }
+    .newPost{
+        width:100%;
+    }
+    .Button{
+        display:inline-block;
+    }
+    header{
+        height:auto;
+        width:100%;
+        margin:0;
+        padding:0;
+        .title h1{
+            text-align: center;            
+        }
+}
+}
+@media only screen and (max-width: 600px) {    
+    *{
+        box-sizing: border-box;
+        margin:0;
+        max-width: 100%;
+        
+    }
+    .newPost{
+        margin:0;
+        padding:0;
+        width:100%;
+    }
+    
+    .content{
+        border:none;
+        width:98%;
+        padding:0;
+        text-align:center;        
+    }
+    .Buttons{
+        margin:0;
+        padding:0;
+        border:none;
+        width:100%;
+        height:auto;
+    }
+    .Button{
+        display:inline-block;
+    }
+    header{
+        height:auto;
+        width:100%;
+        margin:0;
+        padding:0;
+        .title h1{
+            text-align: center;            
+        }
+    }
+    .titleArea, .postArea{
+        padding:0;
+    }
+}
+

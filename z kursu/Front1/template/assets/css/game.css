@@ -1,0 +1,33 @@
+#Game {
+    position: relative;
+    float: left;
+    width: 100%;
+}
+
+        #Game .Question,
+        #Game .GameOptions {
+            position: relative;
+            box-sizing: border-box;
+            float: left;
+            width: 100%;
+            padding: 20px;
+            border: 1px solid #2196F3;
+        }
+        
+        #Game .Question {
+            margin-bottom: 20px;
+        }
+
+        #Game .GameOptions {}
+        
+        
+        
+        
+        
+        
+        
+  
+        
+        
+        
+        

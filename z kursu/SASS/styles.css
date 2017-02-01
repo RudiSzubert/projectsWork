@@ -1,0 +1,28 @@
+.Button {
+    margin:0px 10px;
+    width: 100px;
+    float:right;
+}
+.Buttons{
+    margin:0 auto;
+    margin-top:25px;
+    width: 600px;
+    height: 200px;
+    text-align: center;
+}
+
+
+.ajaxButton{
+    width: 70px;    
+    padding:3px 7px;
+    background-color: #A3A3A3;
+    border-radius: 3px;
+    border:1px solid black;
+}
+.ajaxButton:hover{
+    cursor:pointer;
+}
+
+.ajaxButton:active{
+    background-color: #C3C3C3;
+}

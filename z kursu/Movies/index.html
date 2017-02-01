@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html data-ng-app="myApp">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Here is the description about this page">
+	<meta name="author" content="satan">
+	<title>movies</title>	
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script src="jquery-3.1.1.js"></script>
+	
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+</head>
+<body >
+	<div class='container' >
+	<h1><span class="glyphicon glyphicon-cd" aria-hidden="true"></span> &nbsp;&nbsp;&nbsp; Best movie DB in the web! <span class="label label-default">but seriously, it's good</span></h1>
+	</div>
+	<div class='container' data-ng-controller="myCtrl"  >
+		<div class='movieList'>
+		<div class="dropdown">
+				<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+					Sort By
+					<span class="caret"></span>
+				</button>
+			  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+				<li><a class='sortBy btnsort0 btnyear'>sort by year</a></li>
+				<li><a class='sortBy btnsort1 btnyeardesc'>sort by year (desc)</a></li>
+				<li><a class='sortBy btnsort2 btndur'>sort by duration</a></li>
+				<li><a class='sortBy btnsort3 btndurdesc'>sort by duration(desc)</a></li>
+				<li><a class='sortBy btnsort4 btnseries'>series first</a></li>
+				<li><a class='sortBy btnsort5 btnmovies'>movies first</a></li>
+			  </ul>
+			  <div class='paginator'>
+                <div class='previous'><</div>
+                <div class='pagNum current'>1</div>
+                <div class='next'>></div>
+			</div>
+		</div>
+			<ul>
+				<li class='void'></li>				
+			</ul>
+			
+
+		</div>
+		<div class='oneMovie'>
+			<h3>Selected movie:</h3>
+			<div id='visibleTitle'></div>
+			<img src='' id='myMoviePoster'>
+			<p></p>
+		</div>
+		
+		<div class='addMovie'>
+			<div class="movieInput">
+				<label for="movieTitle">movie title:</label>
+				<input id="movieTitle" type="text" ng-model='mTitle' name="movieTitle" class="Text" />
+			</div>
+			<div class="movieInput">
+				<label for="movieYear">movie year:</label>
+				<input id="movieYear" type="text" ng-model='mYear' name="movieYear" class="Text" />
+			</div>
+			<div class="movieInput">
+				<label for="movieDescription">movie description:</label>
+				<input id="movieDescription" type="text" ng-model='mDesc' name="movieDescription" class="Text" />
+			</div>
+			<div class="movieInput">
+				<label for="movieType">movie type:</label>
+				<select id="movieType" ng-model='mType'  
+				ng-options="type as type.label for type in types"> 
+				</select>
+			</div>
+			<div class="movieInput">
+				<label for="movieDuration">movie duration:</label>
+				<input id="movieDuration" type="text" ng-model='mDur' name="movieDuration" class="Text" />
+			</div>
+			<button class='button addMovieBtn'>add movie</button>
+		</div>
+	</div>
+	
+		
+	
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+  </body>
+
+</html>

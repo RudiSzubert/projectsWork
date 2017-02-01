@@ -1,0 +1,355 @@
+body {
+    text-align: center;
+}
+
+#page {
+    display: inline-block;
+    vertical-align: top;
+    width: 980px;
+    margin: 10px auto;
+    padding: 10px;
+    text-align: left;
+    background: #FAFAFA;
+    border: 1px solid #CCC;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+
+label {
+    font-weight: 700;
+    color: #333;
+    line-height: 25px;
+}
+
+input.Text {
+    width: 228px;
+    height: 23px;
+    padding: 0px 10px;
+    box-sizing: content-box;
+    border: 1px solid #CCC;
+}
+
+input.Disabled {
+    background: #CCC;
+}
+
+input.Short {
+    width: 28px;
+}
+
+.Button {
+    height: 25px;
+    padding: 0px 15px;
+    font-weight: 700;
+    color: #FFF;
+    background: #2196F3;
+    border: none;
+    cursor: pointer;
+}
+
+.ShortBtn {
+    width: 25px;
+    padding: 0px;
+    text-align: center;
+}
+
+a.ShortBtn {
+    display: inline-block;
+    line-height: 25px;
+}
+
+.Button:hover {
+    opacity: 0.7;
+}
+
+
+span.Label,
+span.Value {
+    font-weight: 700;
+    line-height: 25px;
+}
+
+span.Label {
+    margin-right: 10px;
+    color: #666;
+}
+
+
+span.Value {
+    color: #000;
+}
+
+
+.Container {
+    position: relative;
+    float: left;
+    width: 100%;
+}
+
+
+#Header {
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    border-bottom: 2px solid #CCC;
+}
+
+
+        #Header #User {
+            float: right;
+            width: 100%;
+            margin-bottom: 15px;
+            padding: 10px 0px;
+            background: #2196F3;
+        }
+        
+                #User span {
+                    float: left;
+                    color: #FFF;
+                }
+        
+                #User .Login {
+                    float: right;
+                }
+                
+                        #User .Login .Value {
+                            margin-right: 20px;
+                        }
+        
+                #User .Info {
+                    float: left;
+                }
+                
+                        #User .Info .Label {
+                            margin-left: 20px;
+                        }
+
+        #Header #Logo {
+            display: table;
+            overflow: hidden;
+            float: left;
+            height: 100px;
+            max-height: 100px;
+        }
+        
+                #Logo a {
+                    display: table-cell;
+                    height: 100%;
+                    vertical-align: middle;
+                }
+
+                        #Logo a img {
+                            max-height: 100px;
+                        }
+            
+                #Logo a:hover {
+                    opacity: 0.7;
+                }
+
+        #Header #Menu {
+            float: right;
+            height: 30px;
+            margin-top: 35px;
+        }
+        
+                #Menu ul {
+                    list-style: none;
+                    float: left;
+                }
+                
+                        #Menu ul li {
+                            float: left;
+                            margin-right: 20px;
+                            padding-right: 20px;
+                            border-right: 2px solid #CCC;
+                        }
+                        
+                                #Menu ul li a {
+                                    display: block;
+                                    font-weight: 700;
+                                    color: #333;
+                                    line-height: 15px;
+                                }
+                                
+                                #Menu ul li a:hover {
+                                    color: #2196F3;
+                                }
+                        
+                        #Menu ul li:last-child {
+                            margin-right: 0px;
+                            padding-right: 0px;
+                            border-right: none;
+                        }
+
+
+
+ul.ItemList {
+    list-style: none;
+    position: relative;
+    float: left;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+        ul.ItemList > li {
+            display: table;
+            float: left;
+            width: 100%;
+            margin: 0px;
+            padding: 0px;
+        }
+        
+                ul.ItemList > li > div.Cell {
+                    display: table-cell;
+                    width: 100px;
+                    height: 100%;
+                    text-align: center;
+                    vertical-align: middle;
+                }
+                
+                ul.ItemList > li > div.Nr {
+                    width: 50px;
+                    max-width: 50px;
+                }
+                
+                ul.ItemList > li > div.Level {
+                    width: 100px;
+                    max-width: 100px;
+                }
+                
+                ul.ItemList > li > div.Value {
+                    width: 200px;
+                    max-width: 200px;
+                    text-align: left;
+                }
+                
+                ul.ItemList > li > div.Answers {
+                    text-align: left;
+                }
+                
+                ul.ItemList > li > div.Correct {
+                    width: 150px;
+                    max-width: 150px;
+                }
+                
+                ul.ItemList > li > div.Edit {
+                    width: 100px;
+                    max-width: 100px;
+                }
+        
+        ul.ItemList > li.Head {
+            height: 30px;
+            margin-bottom: 10px;
+            background: #2196F3;
+        }
+        
+                ul.ItemList > li.Head > div.Cell {
+                    font-weight: 700;
+                    color: #FFF;
+                }
+        
+        ul.ItemList > li.Item {
+            padding: 10px 0px;
+            border-top: 1px solid #DDD;
+            border-bottom: 1px solid #DDD;
+        }
+        
+                ul.ItemList > li.Item > div.Cell {
+                    font-size: 12px;
+                    font-weight: 700;
+                    color: #666;
+                }
+                
+                ul.ItemList > li.Item > div.Edit {}
+                
+                        ul.ItemList > li.Item > div.Edit > a {
+                            margin: 0px 3px;
+                            text-indent: -20000px;
+                            cursor: pointer;
+                        }
+                        
+                        ul.ItemList > li.Item > div.Edit > a.EditItem {
+                            background: url(../images/icons/i-edit.png) center center no-repeat;
+                            background-size: 100% 100%; 
+                        }
+                        
+                        ul.ItemList > li.Item > div.Edit > a.EditItem.Active {
+                            background: url(../images/icons/i-cancel.png) center center no-repeat;
+                            background-size: 100% 100%; 
+                        }
+                        
+                        ul.ItemList > li.Item > div.Edit > a.SaveItem {
+                            display: none;
+                            background: url(../images/icons/i-ok.png) center center no-repeat;
+                            background-size: 100% 100%; 
+                        }
+                        
+                        ul.ItemList > li.Item > div.Edit > a.RemoveItem {
+                            background: url(../images/icons/i-delete.png) center center no-repeat;
+                            background-size: 100% 100%; 
+                        }
+                        
+                        ul.ItemList > li.Item > div.Edit > a.RemoveItem.Active {
+                            width: auto;
+                            color: #FF0000;
+                            text-indent: 0px;
+                            background: none;
+                        }
+                        
+                        ul.ItemList > li.Item > div.Edit > a:hover {
+                            opacity: 0.7;
+                        }
+        
+        ul.ItemList > li.Item:nth-child(odd) {
+            background: #FFF;
+        }
+
+
+#QuestionAdd {
+    position: relative;
+    float: left;
+    width: 100%;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    border-bottom: 2px dashed #CCC;
+}
+
+        #QuestionAdd .Single {
+            float: left;
+            margin-right: 20px;
+        }
+        
+                #QuestionAdd .Single label,
+                #QuestionAdd .Single input {
+                    float: left;
+                }
+                
+                #QuestionAdd .Single label {
+                    margin-right: 10px;
+                }
+        
+        #QuestionAdd .Single:last-child {
+            margin-right: 0px;
+        }
+        
+        
+#Footer {
+    margin-top: 30px;
+    padding-top: 30px;
+    border-top: 2px solid #CCC;
+}
+
+.editInputs input{
+    margin:0 9px;
+    width:85px;
+}
+.editInputs #Level{
+    margin-left:45px;
+}
+.editInputs #Qval{
+    width:160px;
+}

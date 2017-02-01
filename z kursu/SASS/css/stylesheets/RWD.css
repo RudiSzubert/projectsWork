@@ -1,0 +1,98 @@
+@media only screen and (max-width: 1200px) {
+  /* line 2, ../sass/RWD.scss */
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    max-width: 100%;
+  }
+
+  /* line 7, ../sass/RWD.scss */
+  .Buttons {
+    margin: 0;
+    padding: 0;
+    border: none;
+    width: 100%;
+    height: auto;
+  }
+
+  /* line 14, ../sass/RWD.scss */
+  .content {
+    width: 100%;
+  }
+
+  /* line 17, ../sass/RWD.scss */
+  .newPost {
+    width: 100%;
+  }
+
+  /* line 20, ../sass/RWD.scss */
+  .Button {
+    display: inline-block;
+  }
+
+  /* line 23, ../sass/RWD.scss */
+  header {
+    height: auto;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  /* line 28, ../sass/RWD.scss */
+  header .title h1 {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 600px) {
+  /* line 34, ../sass/RWD.scss */
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    max-width: 100%;
+  }
+
+  /* line 40, ../sass/RWD.scss */
+  .newPost {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  /* line 46, ../sass/RWD.scss */
+  .content {
+    border: none;
+    width: 98%;
+    padding: 0;
+    text-align: center;
+  }
+
+  /* line 52, ../sass/RWD.scss */
+  .Buttons {
+    margin: 0;
+    padding: 0;
+    border: none;
+    width: 100%;
+    height: auto;
+  }
+
+  /* line 59, ../sass/RWD.scss */
+  .Button {
+    display: inline-block;
+  }
+
+  /* line 62, ../sass/RWD.scss */
+  header {
+    height: auto;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  /* line 67, ../sass/RWD.scss */
+  header .title h1 {
+    text-align: center;
+  }
+
+  /* line 71, ../sass/RWD.scss */
+  .titleArea, .postArea {
+    padding: 0;
+  }
+}

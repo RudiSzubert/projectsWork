@@ -1,0 +1,253 @@
+/* line 5, ../../../../../../Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 5, ../sass/styles.scss */
+body {
+  background-color: #F0F0FF;
+}
+
+/* line 8, ../sass/styles.scss */
+.Button {
+  width: 100px;
+}
+
+/* line 11, ../sass/styles.scss */
+.content {
+  border-right: 1px solid black;
+  margin: 10px;
+  margin-left: 5px;
+  float: left;
+  width: 88%;
+  background-color: #E3E3E3;
+}
+/* line 18, ../sass/styles.scss */
+.content .notActive {
+  display: none;
+}
+/* line 21, ../sass/styles.scss */
+.content .somePost {
+  overflow: auto;
+  border-radius: 10px;
+  filter: drop-shadow(3px 3px 20px black);
+  padding: 10px;
+  margin: 10px;
+  background-color: #C3C3C3;
+}
+/* line 28, ../sass/styles.scss */
+.content .somePost h3 {
+  font-size: 22px;
+  border-bottom: 1px solid black;
+  margin-bottom: 10px;
+}
+/* line 33, ../sass/styles.scss */
+.content .somePost p {
+  margin-top: 35px;
+  text-indent: 15px;
+}
+/* line 37, ../sass/styles.scss */
+.content .somePost span {
+  float: left;
+  width: 100%;
+}
+/* line 41, ../sass/styles.scss */
+.content .somePost img {
+  height: 60px;
+  width: 60px;
+  margin-top: 5px;
+  margin-right: 10px;
+  float: left;
+}
+/* line 49, ../sass/styles.scss */
+.content .paginator {
+  width: 200px;
+  margin: 0 auto;
+  height: 30px;
+  text-align: center;
+  background-color: #E3E3E3;
+}
+/* line 50, ../sass/styles.scss */
+.content .paginator div {
+  display: inline;
+}
+/* line 51, ../sass/styles.scss */
+.content .paginator div:hover {
+  cursor: pointer;
+}
+
+/* line 64, ../sass/styles.scss */
+.Buttons {
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+  float: left;
+  padding-top: 20px;
+  background-color: #E3E3E3;
+  margin: 10px;
+  margin-left: 5px;
+  width: 110px;
+  height: 500px;
+  text-align: center;
+}
+/* line 75, ../sass/styles.scss */
+.Buttons h1 {
+  font-size: 24px;
+}
+
+/* line 79, ../sass/styles.scss */
+header {
+  margin: 5px;
+  border-bottom: 1px solid black;
+  width: 98%;
+  height: 100px;
+  background-color: #B3B3B3;
+}
+/* line 85, ../sass/styles.scss */
+header .title {
+  display: inline-block;
+  width: 500px;
+}
+/* line 88, ../sass/styles.scss */
+header .title h1 {
+  padding: 25px;
+  font-size: 42px;
+}
+/* line 94, ../sass/styles.scss */
+header .searchWr {
+  float: right;
+  margin-top: 30px;
+  width: 250px;
+}
+/* line 97, ../sass/styles.scss */
+header .searchWr input {
+  float: left;
+}
+/* line 101, ../sass/styles.scss */
+header .searchWr #searchIcon {
+  margin-left: 2px;
+  width: 20px;
+  height: 20px;
+  background-color: #B3B3B3;
+  float: left;
+}
+/* line 107, ../sass/styles.scss */
+header .searchWr #searchIcon:hover {
+  cursor: pointer;
+}
+
+/* line 113, ../sass/styles.scss */
+.ajaxButton {
+  margin: 10px;
+  float: left;
+  width: 70px;
+  padding: 3px 7px;
+  background-color: #A3A3A3;
+  border-radius: 3px;
+  border: 1px solid black;
+}
+/* line 121, ../sass/styles.scss */
+.ajaxButton:hover {
+  cursor: pointer;
+}
+/* line 124, ../sass/styles.scss */
+.ajaxButton:active {
+  background-color: #C3C3C3;
+}
+
+/* line 128, ../sass/styles.scss */
+.newPost {
+  text-align: center;
+  margin: 10px;
+  margin-left: 5px;
+  width: 88%;
+  height: 300px;
+  background-color: #C3C3C3;
+}
+/* line 129, ../sass/styles.scss */
+.newPost h1 {
+  margin: 15px;
+  padding-top: 15px;
+  font-size: 25px;
+}
+/* line 140, ../sass/styles.scss */
+.newPost .buttWrap {
+  padding-top: 10px;
+  text-align: center;
+  margin: 0 auto;
+  width: 443px;
+  height: 30px;
+}
+/* line 143, ../sass/styles.scss */
+.newPost .buttWrap a {
+  background-color: white;
+  border: 1px solid black;
+  padding: 3px 7px;
+}
+/* line 147, ../sass/styles.scss */
+.newPost .buttWrap a:hover {
+  cursor: pointer;
+}
+/* line 150, ../sass/styles.scss */
+.newPost .buttWrap a:active {
+  background-color: #B3B3B3;
+}
