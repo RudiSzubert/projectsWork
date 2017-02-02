@@ -1,17 +1,36 @@
-$(function(){	
-
-	
+$(document).ready(function() {
+	$(this).scrollTop(0);
 });
 
-$(document).on('click','.mySlide',function(){
-	console.log((this.id));
-	$("<div class='greyBack'></div>").insertBefore($('.header'));
-	$("<div class='imageFull'><img class='imgFull' src='cars/" + this.id +".jpg' /></div>").insertBefore($('.header'));
-	$('.imgFull').animate({
-		width: '80%'}, 300);
-});
 
-$(document).on('click','.imageFull',function(){
-	$('.greyBack').remove();
-	$('.imageFull').remove();
+
+
+
+var myApp = angular.module("myApp", ['ngAnimate']);
+   
+myApp.controller("my-ctrl", function($scope, $window, $anchorScroll) {
+	$scope.transVar = true;
+	$scope.func = function(id){			
+		$scope.img=id;
+		setTimeout(function() {
+			var x = document.getElementById('imageTest');
+			x.className += ' imgFullbig';
+		}, 30);
+	};		
+	$scope.hideFullscreenImage = function (){
+		$scope.img = false;
+	};
+	angular.element($window).bind("scroll", function(e) {
+	   //console.log('scroll')
+	  // console.log($window.pageYOffset)
+	   if($window.pageYOffset >900){
+		   $('.currentPage').removeClass('currentPage');
+		   console.log($('.paginator').children(['#secondPage']));
+		   $('.paginator').children(['#secondPage']).addClass('currentPage');
+		  // $('.currentPage').removeClass('currentPage'); 
+	   	//$anchorScroll(['#tech']);
+	   	}
+   })
+
+
 });

@@ -1,64 +1,88 @@
 <!DOCTYPE html>
 <html>
 <head>
+ <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+ <script src="https://code.angularjs.org/1.6.1/angular-animate.min.js"></script>
+	<link rel="stylesheet" href="animate.css">
 	<title>MT frontend Dev</title>
-	<script src="jquery-3.1.1.js" type="text/javascript"></script>	
+	<script src="jquery-3.1.1.js" type="text/javascript"></script>
+	<script src="viewport.js" type="text/javascript"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-	<link rel="stylesheet" type="text/css" href="styles.css">
-	
+	<link rel="stylesheet" type="text/css" href="styles.css">	
 </head>
-<body>
-		<div class='header'>			
+<div class='paginator'>
+	<a href='#' id='firstPage' class='currentPage' >*</a> <br>
+	<a href='#tech' id='secondPage'>*</a> <br>
+	<a href='#gallery' id='thirdPage'>*</a> <br>
+	<a href='#contact' id='fourthPage'>*</a>	
+</div>
+<body ng-app="myApp" ng-controller='my-ctrl'>
+<div ng-if="img" class='greyBack'></div>	
+<div ng-if="img" class='imageFull'>
+	<div class="picFrame">
+		<div ng-click="hideFullscreenImage()" class='hideImage'> + </div>
+		<img id="imageTest" class='imgFullsm grow'  ng-src='cars/{{ img }}.jpg' />
+	</div>
+</div>
+
+<div class='content'>	
+	<div class='header'>
+		<div class='firstPic'>	
+		<img src='chem.jpg' />
+	</div>
+		<div class='logoWrap'>
 			<img src='MT.png'/>
-			<div class='navLinks'>
-				<ul>
-					<li><h3><a href='#'>About Me</a></h3></li>
-					<li><h3><a href='#'>Books</a></h3></li>
-					<li><h3><a href='#cars'>Cars</a></h3></li>
-					<li><h3><a href='#'>Science</a></h3></li>
-					<li><h3><a href='#contact'>Contact</a></h3></li>				
-				</ul>
-			</div>
 		</div>
-	<div style='height:150px;width:100%;'></div>
-	<div class='content'>
-		<div id='about' class='aboutMe'>
-			<h3>My name is Mateusz</h3>
-			<h4>I'm a chemical engineer</h4>
-			<h4>But my country is great, so i have no job</h4>
-			<h4>and I work hard to become</h4>
-			<h2>Frontend Developer</h2>			
-		</div>
-		<div class='tech'>
-			<h2>By using the most advanced tools</h2>
-			<img src='tech/js.png' />
-			<img src='tech/angular.png' />
-			<img src='tech/c.png' />
-			<h4>Which i just started to learn</h4>
-			<img src='tech/css.png' />
-			<img src='tech/html.png' />
-			<img src='tech/php.png' />		
-		</div>
-		<div class='imgWrap' id='cars'>
-			<h2>just look at these styles</h2>
-			<div class='images'>
-				<img class='mySlide' id='img1' src='cars/img1.jpg'/>
-				<img class='mySlide' id='img2' src='cars/img2.jpg'/>
-				<img class='mySlide' id='img3' src='cars/img3.jpg'/>
-				<img class='mySlide' id='img4' src='cars/img4.jpg'/>
-				<img class='mySlide' id='img5' src='cars/img5.jpg'/>			
-				<img class='mySlide' id='img6' src='cars/img6.jpg'/>			
-			</div>
+	<div class='navLinks'>
+			<h3 class='col-md-2'><a href='#'>About Me</a></h3>
+			<h3 class='col-md-2'><a href='#gallery'>Gallery</a></h3>
+			<h3 class='col-md-2 col-md-offset-4'><a href='#tech'>Technology</a></h3>
+			<h3 class='col-md-2'><a href='#contact'>Contact</a></h3>
+	</div>
+	<div id='about' class='aboutMe'>
+		<h3>My name is Mateusz</h3>
+		<img src='me.jpg' />
+		<h3>I'm a chemical engineer</h3>
+		<h3>But my country is great, so i have no job</h3>
+		<h3>and I work hard to become</h3>
+		<h1>Frontend Developer</h1>			
+	</div>
+	</div>
+	<div style='clear: both'></div>
+	<div class='tech' id='tech'>
+		<h2>By using the most advanced tools</h2>
+		<img class='postAnimation' src='tech/js.png' />
+		<img class='postAnimation' src='tech/angular.png' />
+		<img class='postAnimation' src='tech/c.png' />
+		<h3>Which i just started to learn</h3>
+		<img class='postAnimation' src='tech/css.png' />
+		<img class='postAnimation' src='tech/html.png' />
+		<img class='postAnimation' src='tech/php.png' />		
+	</div>
+	<div class='imgWrap' id='gallery'>
+		<h2>just look at these styles</h2>
+		<div class='images'>			
+			<img class='mySlide img-thumbnail' ng-click="func('img1')" src='cars/img1.jpg'/>
+			<img class='mySlide img-thumbnail' ng-click="func('img2')" src='cars/img2.jpg'/>
+			<img class='mySlide img-thumbnail' ng-click="func('img3')" src='cars/img3.jpg'/>
+			<img class='mySlide img-thumbnail' ng-click="func('img4')" src='cars/img4.jpg'/>
+			<img class='mySlide img-thumbnail' ng-click="func('img5')" src='cars/img5.jpg'/>			
+			<img class='mySlide img-thumbnail' ng-click="func('img6')" src='cars/img6.jpg'/>			
+			<img class='mySlide img-thumbnail' ng-click="func('img7')" src='cars/img7.jpg'/>			
+			<img class='mySlide img-thumbnail' ng-click="func('img8')" src='cars/img8.jpg'/>			
+			<img class='mySlide img-thumbnail' ng-click="func('img9')" src='cars/img9.jpg'/>			
 		</div>
 	</div>
-	<div style='clear: both;'></div>
-	<footer id='contact'>
-		<input type="text" name="name" placeholder="Name">
-		<input type="email" name="email" placeholder="Email address">
-		<textarea name="message" id="message" rows="7" placeholder="Your message"></textarea>
-		<input type="submit" id="submit" value="Send Message" class="button">
-	</footer>
+</div>
+
+<div style='clear: both;'></div>
+<footer id='contact'>
+	<input type="text" name="name" placeholder=" Name">
+	<input type="email" name="email" placeholder=" Email address">
+	<textarea name="message" id="message" rows="7" placeholder=" Your message"></textarea>
+	<input type="submit" id="submit" value="Send Message" class="button">
+</footer>
 
 
 

@@ -1,57 +1,38 @@
-.header {
-	z-index: 10;
-	margin: 15px;
-	padding: 10px;
-	padding-left: 270px;
-	height: 120px;
-	width: 98%;
-	position: fixed;
-
-	
-	background-color: #89B6A5;filter: drop-shadow(7px 7px 10px grey);
-}
-body {
-	background-color: #C9EDDC;
+@font-face {
+    font-family: casualSoftcore;
+    src: url(font/casualSoftcore.otf);
 }
 
-a, a:visited, a:active, a:hover {
-	text-decoration: none;
+* {
+	font-family: casualSoftcore;
+	letter-spacing: 2.5px;
+	font-weight: 400;
 	color: black;
 }
 
-.tech {
-	text-align: center;
+.hideImage {
+	transform: rotate(45deg);
+	color: red;
+	font-weight: 100;
+	font-size: 80px;
+	z-index: 504;
+	left: 90.8%;
+	bottom: 90.2%;
+	position: fixed;
 }
 
-.navLinks > ul >li>h3:hover  {
-	font-weight: 900;
+.hideImage:hover {
 	cursor: pointer;
+	font-weight: 900;
 }
 
-.header > img {
-	float: left;
-	width: 100px;
-	height: auto;
-	margin-right: 100px;
-}
-.navLinks > ul  {	
-	list-style-type: none;
-}
-
-.navLinks > ul > li  {
-	margin: 20px;
-	margin-top: 10px;
-	text-align: center;
-	width: 120px;
-	display: inline-block;
-	float: left;	
-}
-
-.content {
-	width: 100%;	
-}
-.tech > img {
-	margin: 0px 30px;
+.picFrame {
+	padding: 1%;
+	background-color: white;
+	position: fixed;
+	z-index: 1;
+	width: 82%;
+	height: 100%;
 }
 
 .greyBack {
@@ -62,61 +43,171 @@ a, a:visited, a:active, a:hover {
 	filter: opacity(0.6);
 	z-index: 500;
 }
-.content > .imgWrap {
-	text-align: center;
-	margin: 0 auto;
-	width: 1040px;
+
+.imageFull {
+	padding: 1% 10%;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: 502;
+}
+
+.grow {
+	-webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.imgFullsm {
+	width: 10%;
+	height: auto;
+}
+
+.imgFullbig {
+	position: fixed;
+	z-index: 503;
+	width: 80%;
+	height: auto;
+}
+
+body {
+	 background-color: #dddddd;
+}
+
+.firstPic {
+	position: relative;
+	width: 100%;
 }
 
 .aboutMe {
 	text-align: center;
-	margin:0 auto;
 	margin-top: 100px;
-	width: 640px;	
-	height: 400px;
 }
 
-.aboutMe::after {
-	top: 150px;
-	left: 510px;
-	content: '';
+.aboutMe > * {
+	margin: 15px 0px;
+}
+
+.aboutMe > img {
+	z-index: 2;
+	width: 100px;
+	height: auto;
+	border-radius: 50px;
+}
+
+.firstPic img {
+	filter: grayscale(0.7) opacity(0.5);
+	z-index: -1;
 	position: absolute;
-	z-index: 5;
-	width: 640px;	
-	height: 400px;
-	background: url(chem.jpg);	
-	filter: drop-shadow(10px 10px 20px black) grayscale(0.8) opacity(0.4);
+	width: 100%;
+	height: auto;
+}
+
+.logoWrap {
+	text-align: center;
+}
+
+.logoWrap > img {
+	width: 10%;
+	height:auto;
+}
+a, a:visited, a:active, a:hover {
+	text-decoration: none !important;
+	color: black;
+}
+
+.tech {
+	margin-top:18%;
+	text-align: center;
+}
+
+.navLinks > h3 > a:hover {
+	font-weight: 600;	
+	cursor: pointer;
+}
+
+.navLinks h3 {	
+	height: 40px;
+	top:-100px;
+	text-align: center;
+}
+
+.navLinks h3 a {
+	position:relative;
+	padding:20px;
+	border: 2px groove red;
+}
+.navLinks h3 a:before{
+	position:absolute;
+	content: '';
+	z-index: -1;
+	top: 2px;
+	left: 2px;
+	right: 2px;
+	bottom: 2px;
+	border: 2px solid #DDDDDD;
+}
+
+.paginator {
+	margin-top: 300px;
+	margin-left: 30px;
+	position: fixed;
+	z-index:600;
+	text-decoration: none !important;
+}
+
+.paginator > a {
+	font-size: 30px;
+	color: red;
+}
+
+.currentPage {
+	color: grey !important;
+}
+
+.content {
+	width: 100%;	
+}
+
+.techImg {
+	width: 150px;
+	height: auto;
+	margin: 80px 530px;
+}
+
+.postAnimation {
+	margin: 80px 30px;
+	width: 150px;
+	height: auto;
+}
+
+.postAnimation:hover {
+	cursor: pointer;
+	transform: rotate(360deg);
+	transition: all 0.3s ease-in-out;
+}
+
+.imgWrap {
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 250px;
+	width: 1040px;
+}
+
+.activePage {
+	color: white;
 }
 
 .images {
 	list-style-type: none;	
 }
 
-.imageFull {
-	text-align:center;
-	width: 100%;
-	height: 100%;
-	position: fixed;
-	z-index: 501;
-}
-
-.imageFull > img {
-	width:10%;
-	height:auto;
-}
-
-.images  {
-	padding-top:50px;
-	padding-left:50px;
-	width: 100%;
-	height: 500px;
-
-}
 .images > img {
 	cursor: pointer;
 	width: 300px;
 	height: 220px;
-	margin: 8px;
+	margin: 18px;
 	display: inline-block;
 	float: left;
 }
@@ -130,7 +221,7 @@ footer {
 	padding-top: 20px;
 	height: 450px;
 	width: 100%;
-	background-color: #6A706E;
+	background-color: #dddddd;
 }
 
 footer input, footer textarea {
